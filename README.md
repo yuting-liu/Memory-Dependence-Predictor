@@ -45,4 +45,4 @@ Considering another situation of the coming store, its found valid SSID will lea
 The specific mechanism is required to solve the conflicts when the relationship between dependent load and store instructions are not one-to-one. When memory-order violation occurs, if neither SSID of the load and store instructions is valid, the new store set will be created and then assigned to both. In another situation where the load’s SSID is valid and the store’s SSID is not, the store will inherit the SSID from the load and become part of the load’s store set. Otherwise, overwritting the store’s old SSID with the new one is proved to be efficient to implemnt the store set. However, this rule inheriently limits the number of store sets to which one store instruction could belong, which may create new possibilities for memory-order violations. 
 
 ## Report
-To know more about our project, please see the [report]("Report.pdf") here with more specific implementation details and our performance analysis.
+To know more about our project, please see the [report](Report.pdf) here with more specific implementation details and our performance analysis.
